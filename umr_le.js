@@ -1,5 +1,4 @@
 function selectState() {
-    debugger
     var endState = document.getElementById('targetUnitID').value
     var selState = document.getElementById('sourceUnitID').value
     var inputID = document.getElementById("inputID").value

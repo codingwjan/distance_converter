@@ -57,7 +57,9 @@ body{
     width: 160px;
     color: inherit;
     font-size: 18px;
+    animation: scale-down-center 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
+    
 
     .scale-up-center {
         -webkit-animation: scale-up-center 0.3s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
@@ -74,12 +76,24 @@ body{
               transform: scale(1.2);
     }
   }
+
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
   
 
     button:hover{
     cursor: pointer;
     animation: scale-up-center 0.3s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
     }
+    
   
 
     input,select{
